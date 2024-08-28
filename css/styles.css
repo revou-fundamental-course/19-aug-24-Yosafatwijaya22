@@ -3,6 +3,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo-icon {
@@ -15,6 +16,7 @@ nav {
 
 .nav-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -40,6 +42,7 @@ nav {
 .profile-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .profile-item {
@@ -61,23 +64,124 @@ nav {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap; /* Agar elemen bisa berpindah ke baris baru jika tidak muat */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Atur agar elemen sejajar ke kiri */
+  gap: 10px; /* Berikan jarak antar elemen */
+  width: 300px; /* Atur lebar maksimum formulir */
 }
 
-.form-nama {
+.form-group {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
 }
 
-.form-tanggal lahir {
-  display: flex;
-  justify-content: flex-start;
+.form-group label {
+  flex: 0 0 100px; /* Atur lebar label */
+  text-align: right; /* Ratakan teks label ke kanan */
+  margin-right: 10px;
 }
 
-.form-jenis kelamin {
-  display: flex;
-  justify-content: flex-start;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
-.form-pesan {
+.form-container {
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type='text'],
+input[type='date'],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.radio-group {
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.output-container {
+  padding: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.output-container h3 {
+  margin-top: 0;
+}
+
+.form-group {
   display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 0 0 120px;
+  margin-top: 0;
+}
+
+.form-group .colon {
+  flex: 0 0 20px;
+  text-align: center;
+}
+
+.form-group input[type='text'],
+.form-group input[type='date'],
+.form-group .radio-group,
+.form-group textarea {
+  flex: 1;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input[type='radio'] {
+  margin-right: 5px;
+}
+
+.radio-group label {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
 }

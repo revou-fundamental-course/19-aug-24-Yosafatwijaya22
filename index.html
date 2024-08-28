@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
-    <link rel="stylesheet" href="19-aug-24-Yosafatwijaya22\css\styles.css" />
+    <link rel="stylesheet" href="D:/Latihan/19-aug-24-Yosafatwijaya22/css/styles.css" />
   </head>
 
   <body>
@@ -14,17 +14,17 @@
       </header>
 
       <section class="nav-container">
-        <a href="#" class="nav-item">Home</a>
-        <a href="about" class="nav-item">Our Profile</a>
-        <a href="#" class="nav-item">Achivement</a>
-        <a href="#" class="nav-item">Message Us</a>
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#profile" class="nav-item">Our Profile</a>
+        <a href="#message" class="nav-item">Message Us</a>
+        <a href="#info" class="nav-item">Info</a>
       </section>
     </nav>
 
     <hr />
 
     <main>
-      <article>
+      <section id="home">
         <header>
           <h1>Hi <span id="name">Yosa</span> , Welcome to my website</h1>
         </header>
@@ -33,11 +33,11 @@
         <!--<button id="tombol">Ganti Nama</button>-->
 
         <div class="banner-img"></div>
-      </article>
+      </section>
 
       <hr />
 
-      <section id="about">
+      <section id="profile" class="profile">
         <header>
           <h1>Our Profile</h1>
         </header>
@@ -62,43 +62,70 @@
 
       <hr />
 
-      <section>
-        <header>
-          <h1>Message Us</h1>
-        </header>
-
+      <section id="message">
         <form name="message-form" onsubmit="return validateForm()">
-          <!--<input required type="text" placeholder="nama anda" id="name-input" name="name-input" />-->
-          <div class="form-nama">Nama: <input placeholder="Nama" type="text" name="full-name" /></div>
-          <br />
+          <div class="container">
+            <div class="form-container">
+              <header>
+                <h2>Message Us</h2>
+              </header>
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <span class="colon">:</span>
+                  <input type="text" id="name" name="full-name" placeholder="Nama" />
+                </div>
 
-          <div class="form-tanggal lahir">Tanggal Lahir: <input type="date" name="birth-date" /></div>
-          <br />
+                <div class="form-group">
+                  <label for="birthdate">Tanggal lahir</label>
+                  <span class="colon">:</span>
+                  <input type="date" id="birthdate" name="birth-date" />
+                </div>
 
-          <div class="form-jenis kelamin">
-            Jenis Kelamin:
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Laki-laki</label>
-            <input type="radio" id="female" name="gender" value="male" />
-            <label for="female">Perempuan</label>
+                <div class="form-group">
+                  <label>Jenis Kelamin</label>
+                  <span class="colon">:</span>
+                  <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Laki-Laki" />
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" />
+                    <label for="female">Perempuan</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <span class="colon">:</span>
+                  <textarea id="message" name="messages" placeholder="Pesan"></textarea>
+                </div>
+
+                <button type="button" onclick="formValidation()">Submit</button>
+              </form>
+            </div>
+
+            <div class="output-container">Result: <span id="result"></span></div>
+            <!-- <div>
+                Result: <span id="result"></span>
+            </div> -->
           </div>
-          <br />
-
-          <div class="form-pesan">Pesan: <textarea placeholder="Pesan" name="messages"></textarea></div>
-          <br />
-
-          <button id="kirim">Kirim</button>
-          <p id="error-name"></p>
         </form>
-
-        <div></div>
       </section>
     </main>
 
-    <footer>
-      <p>Yosa</p>
-    </footer>
+    <section id="info">
+      <footer>
+        <div class="col-md-7 col-lg-8">
+          <p>
+            &copy; Copyright <strong><span>2023</span></strong
+            >. All Rights Reserved by
+            <a href="#" style="text-decoration: none">
+              <stong class="text-warning">Yosafat</stong>
+            </a>
+          </p>
+        </div>
+      </footer>
+    </section>
 
-    <script src="19-aug-24-Yosafatwijaya22\js\script.js"></script>
+    <script src="D:/Latihan/19-aug-24-Yosafatwijaya22/js/script.js"></script>
   </body>
 </html>

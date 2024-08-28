@@ -13,3 +13,18 @@ function validateForm() {
 
   return false;
 }
+
+function formValidation() {
+  // Ini cara ambil DOM
+  let name = document.getElementById('name').value;
+  // Ini Kondisi pemisahnya
+  if (name == '') {
+    alert('Formnya kosong');
+    // Ini Kondisi jika Formnya kosong
+    document.getElementById('result').innerHTML = '-';
+  } else {
+    // Ini Kondisi jika Formnya Diisi
+    document.getElementById('result').innerText = name;
+  }
+  console.log(name);
+}
