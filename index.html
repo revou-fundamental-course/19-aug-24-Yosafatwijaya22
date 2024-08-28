@@ -3,11 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yosa</title>
-    <link rel="stylesheet" href="D:\Latihan\css\styles.css" />
+    <title>Website</title>
+    <link rel="stylesheet" href="D:\Latihan\19-aug-24-Yosafatwijaya22\css\styles.css" />
   </head>
 
   <body>
-    <div id="p"></div>
+    <nav>
+      <header>
+        <div class="logo-icon"></div>
+      </header>
+
+      <section class="nav-container">
+        <a href="#" class="nav-item">Home</a>
+        <a href="about" class="nav-item">Our Profile</a>
+        <a href="#" class="nav-item">Achivement</a>
+        <a href="#" class="nav-item">Message Us</a>
+      </section>
+    </nav>
+
+    <hr />
+
+    <main>
+      <article>
+        <header>
+          <h1>Hi <span id="name">Yosa</span> , Welcome to my website</h1>
+        </header>
+
+        <p>Ini adalah website latihan pertama saya</p>
+        <!--<button id="tombol">Ganti Nama</button>-->
+
+        <div class="banner-img"></div>
+      </article>
+
+      <hr />
+
+      <section id="about">
+        <header>
+          <h1>Our Profile</h1>
+        </header>
+
+        <section class="profile-container">
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Software Engineer</h2>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Software Engineer</h2>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Software Engineer</h2>
+          </div>
+        </section>
+      </section>
+
+      <hr />
+
+      <section>
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <form name="message-form" onsubmit="return validateForm()">
+          <!--<input required type="text" placeholder="nama anda" id="name-input" name="name-input" />-->
+          <div class="form-nama">Nama: <input placeholder="Nama" type="text" name="full-name" /></div>
+          <br />
+
+          <div class="form-tanggal lahir">Tanggal Lahir: <input type="date" name="birth-date" /></div>
+          <br />
+
+          <div class="form-jenis kelamin">
+            Jenis Kelamin:
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="male" />
+            <label for="female">Perempuan</label>
+          </div>
+          <br />
+
+          <div class="form-pesan">Pesan: <textarea placeholder="Pesan" name="messages"></textarea></div>
+          <br />
+
+          <button id="kirim">Kirim</button>
+          <p id="error-name"></p>
+        </form>
+
+        <div></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Yosa</p>
+    </footer>
+
+    <script src="D:\Latihan\19-aug-24-Yosafatwijaya22\js\script.js"></script>
   </body>
 </html>

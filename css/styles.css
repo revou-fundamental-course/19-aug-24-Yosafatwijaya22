@@ -1,1 +1,83 @@
 /* ini css */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-icon {
+  height: 48px;
+  width: 48px;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-item {
+  border: 1px solid;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.banner-img {
+  height: 578px;
+  width: 1366px;
+  background-image: url(https://picsum.photos/1000);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-item {
+  height: 100px;
+  text-align: -webkit-center;
+}
+
+.profile-img {
+  height: 50px;
+  background-image: url(https://picsum.photos/250);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.message-form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-nama {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-tanggal lahir {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-jenis kelamin {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-pesan {
+  display: flex;
+}
