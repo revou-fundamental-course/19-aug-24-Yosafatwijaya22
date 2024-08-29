@@ -110,8 +110,8 @@ label {
   margin-top: 10px;
 }
 
-input[type='text'],
-input[type='date'],
+input[type="text"],
+input[type="date"],
 textarea {
   width: 100%;
   padding: 8px;
@@ -158,8 +158,8 @@ button {
   text-align: center;
 }
 
-.form-group input[type='text'],
-.form-group input[type='date'],
+.form-group input[type="text"],
+.form-group input[type="date"],
 .form-group .radio-group,
 .form-group textarea {
   flex: 1;
@@ -172,7 +172,7 @@ button {
   align-items: center;
 }
 
-.radio-group input[type='radio'] {
+.radio-group input[type="radio"] {
   margin-right: 5px;
 }
 
