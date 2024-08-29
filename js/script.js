@@ -1,9 +1,9 @@
 function formValidation() {
   // Mendapatkan nilai dari elemen form
-  const name = document.getElementById('name').value;
+  const name = document.getElementById('full-name').value;
   const birthDate = document.getElementById('date').value;
   const gender = document.querySelector('input[name="gender"]:checked');
-  const message = document.getElementById('message').value;
+  const message = document.getElementById('messages').value;
   const result = document.getElementById('result');
 
   // Validasi form
